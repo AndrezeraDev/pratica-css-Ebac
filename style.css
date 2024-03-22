@@ -1,0 +1,155 @@
+/* Define o box-sizing de todos os elementos como border-box para incluir o padding e a borda no tamanho total */
+*{
+    box-sizing: border-box;
+    margin: 0; /* Define margem zero para todos os elementos */
+    padding: 0; /* Define padding zero para todos os elementos (espaço entre o conteúdo de um elemento e suas bordas) */
+}
+
+/* Estiliza o cabeçalho que é um descendente direto do body */
+body > header{
+    background-color: rgb(103, 130, 255); /* Define a cor de fundo */
+    padding: 12px; /* Adiciona preenchimento superior e inferior */
+    color: rgb(245, 255, 185); /* Define a cor do texto */
+    font-family: "Young Serif", serif;
+}
+
+/* Estiliza a classe .container dentro do cabeçalho */
+header .container{
+    display: flex; /* Define o layout como flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+/* Estiliza os itens de lista dentro do cabeçalho */
+header li{
+    display: inline; /* Exibe os itens em linha */
+    font-family: "Young Serif", serif; /* Define a fonte */
+    font-weight: bold; /* Define a espessura da fonte */
+    margin-left: 16px; /* Adiciona margem à esquerda */
+}
+
+/* Estiliza os links dentro dos itens de lista do cabeçalho */
+header li a{
+    color: rgb(245, 255, 185); /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-family: "Sora", sans-serif;
+}
+
+/* Estiliza a classe .container */
+.container{
+    width: 1366px; /* Define a largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Estiliza a classe .articles */
+.articles {
+    display: flex; /* Define o layout como flexível */
+    flex-wrap: wrap; /* Permite a quebra de linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    font-family: "Sora", sans-serif; /* Define a fonte */
+}
+
+/* Estiliza as imagens dentro dos artigos */
+.articles article img {
+    height: 55%; /* Define a altura */
+    width: 100%; /* Define a largura */
+}
+
+/* Estiliza os artigos */
+.articles article{
+    width: 30%; /* Define a largura */
+}
+
+/* Estiliza a seção */
+section{
+    padding: 16px; /* Adiciona preenchimento */
+    font-family: "Young Serif", serif; /* Define a fonte */
+    color: rgb(29, 29, 28); /* Define cor da fonte */
+}
+
+/* Estiliza os títulos h2 dentro da seção e os artigos */
+section h2,
+.articles article {
+    margin-bottom: 30px; /* Adiciona margem inferior */
+}
+
+/* Estiliza os títulos h3 dentro dos artigos */
+.articles article h3{
+    margin-top: 8px; /* Adiciona margem superior */
+    margin-bottom: 8px; /* Adiciona margem inferior */
+}
+
+/* Estiliza os links dentro dos artigos */
+.articles article a {
+    background-color: burlywood; /* Define a cor de fundo */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    padding: 8px; /* Adiciona preenchimento */
+    display: inline-block; /* Exibe como bloco */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Define a espessura da fonte */
+    margin-top: 8px; /* Adiciona margem superior */
+}
+
+/* Estiliza os links quando passados com o mouse */
+.articles article a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+    transform: scale(1.1); /* Aumenta o tamanho em 10% quando o cursor estiver sobre o link */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a mudança de tamanho */
+}
+
+/* Estiliza os parágrafos e links dentro dos artigos */
+.articles article p, 
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+}
+
+/* Estiliza os títulos h3 dentro dos artigos */
+.articles article h3 {
+    font-size: 24px; /* Define o tamanho da fonte */
+}
+
+/* Estiliza os títulos h2 dentro da seção */
+section h2{
+    font-size: 32px; /* Define o tamanho da fonte */
+}
+
+/* Estiliza a seção com id "sports" */
+#sports {
+    background-color: #f2ff3d93; /* Define a cor de fundo */
+}
+
+/* Estiliza os links dentro dos artigos dentro da seção com id "sports" */
+#sports .articles article a{
+    background-color: #eeff0094; /* Define a cor de fundo */
+}
+
+/* Estiliza a seção com id "economy" */
+#economy {
+    background-color: rgba(0, 255, 0, 0.178); /* Define a cor de fundo com transparência */
+}
+
+/* Estiliza os links dentro dos artigos dentro da seção com id "economy" */
+#economy .articles article a{
+    background-color: #00ff5596; /* Define a cor de fundo */
+}
+
+/* Estiliza a seção com id "technology" */
+#technology {
+    background-color: rgba(0, 38, 255, 0.377); /* Define a cor de fundo com transparência */
+}
+
+/* Estiliza os links dentro dos artigos dentro da seção com id "technology" */
+#technology .articles article a{
+    background-color: #00828680; /* Define a cor de fundo */
+}
+
+/* Estiliza a seção com id "travelandgastronomy" */
+#travelandgastronomy {
+    background-color: rgba(255, 65, 65, 0.377); /* Define a cor de fundo com transparência */
+}
+
+/* Estiliza os links dentro dos artigos dentro da seção com id "travelandgastronomy" */
+#travelandgastronomy .articles article a{
+    background-color: #862600b2; /* Define a cor de fundo */
+}
